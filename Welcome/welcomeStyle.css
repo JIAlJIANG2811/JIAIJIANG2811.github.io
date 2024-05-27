@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    background: url("yang.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.wrapper .center{
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    font-family: 方正中楷繁体;
+    user-select: none;
+}
+.center h1{
+    color:white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+.center h2{
+    color:#eeeeee;
+    font-size: 35px;
+    font-weight: bold;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+}
