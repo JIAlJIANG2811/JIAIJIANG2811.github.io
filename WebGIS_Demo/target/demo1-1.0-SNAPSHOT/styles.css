@@ -1,0 +1,161 @@
+/* Font Awesome 图标库引入 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+#map{
+    position: relative;
+    z-index: 1;
+}
+
+/* 搜索框的设计 */
+#form-container {
+    z-index: 2;
+    position: absolute;
+    background-color: white;
+    left: 5%;
+    top:3%;
+    width: 250px;
+    margin: auto auto;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+#address-form {
+    display: flex;
+    flex-direction: row; /* 水平排列 input 和 button */
+    align-items: center;
+}
+input[type="text"], button {
+    margin: 0;
+}
+#address {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+}
+#address:focus {
+    border-color: #357ae8;
+}
+#addressSearch-btn {
+    background-color: transparent;
+    color: #4285f4;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+#addressSearch-btn:hover {
+    color: #357ae8;
+}
+
+/* 设置功能按钮的图标 */
+.buttons{
+    position: absolute;
+    z-index: 2;
+    left:5%;
+    top:12%;
+    display: flex;
+    gap: 10px;
+    padding: 10px; /* 增加内边距 */
+    border: 1px solid #ccc; /* 边框样式 */
+    border-radius: 5px; /* 边框圆角 */
+    background-color: #f0f0f0; /* 背景色 */
+}
+.icon-btn {
+    background-color: #007bff; /* 按钮背景色 */
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 12px; /* 按钮内边距 */
+    border-radius: 5px; /* 按钮圆角 */
+    transition: background-color 0.3s ease;
+}
+.icon-btn:hover {
+    background-color: #0056b3; /* 悬停时的背景色 */
+}
+.icon-btn:focus {
+    outline: none;
+}
+.icon-btn:active {
+    transform: translateY(1px);
+}
+
+/* 天气的地方 */
+#future-weather-chart-container{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background: #ffffff;
+    opacity: 0.8;
+    bottom:5%;
+    left:13%;
+    width: 200px;
+    height: 300px;
+    align-items: center;
+}
+
+#weather-info-container{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background: #ffffff;
+    opacity: 0.8;
+    right:5%;
+    top:5%;
+    width: 300px;
+    height: 250px;
+}
+/* 添加的标签css */
+#label-container{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+    padding: 20px;
+    border: 2px solid rgba(153, 0, 0, 0.8); /* 深红色半透明边框 */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+}
+#label-container p{
+    font-family: 'KaiTi', '楷体', serif; /* 使用楷体或类似的书法字体 */
+    font-size: 24px; /* 字号 */
+    color: #990000; /* 深红色字体 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 字体阴影 */
+    text-align: center;
+}
+
+/* 城市图片 */
+#picture-container{
+    position: absolute;
+    right:10%;
+    bottom:10%;
+    width: auto;
+    height: auto;
+    z-index: 2;
+}
+.picture{
+    width: 400px;
+    height: 280px;
+}
+
+/* 写入的距离 */
+#length{
+    margin-top: 10px;
+    z-index: 2;
+
+}
+#lineLength{
+    position:absolute;
+    background-color: white;
+    left:10%;
+    top:50%;
+    z-index: 2;
+}

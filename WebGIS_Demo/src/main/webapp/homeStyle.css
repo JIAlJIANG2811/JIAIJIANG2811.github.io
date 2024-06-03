@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    Margin: 0;
+}
+.wrapper{
+    background:url("img/bg.jpg"),no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+.navbar{
+    height: 100px;
+    width:100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.logo{
+    width:auto;
+    height: 75px;
+    padding: 10px 100px;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 100px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+    padding: 9px 15px;
+    font-family: 'Roboto', sans-serif;
+    transotoon: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: red;
+    border-radius: 2px;
+}
+/* 修改center的背景颜色 */
+.wrapper .center {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-family: '方正兰亭黑', 'FZLanTingHei-H-GBK', sans-serif;
+    user-select: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+.center h1{
+    color:Black;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+.center h1 {
+    line-height:100%;
+}
+.center .buttons{
+    margin: 35px 200px;
+    align-items: center;
+}
+.buttons button {
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: red;
+    border: 1px solid #cc0000;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+
+.buttons button:hover{
+    background: #cc0000;
+}
